@@ -3,12 +3,16 @@
 #include <stdlib.h>
 
 #ifdef _WIN32
-#include <Windows.h>
+#include <windows.h>
 #include <conio.h>
-#else
+#endif
+
+#ifdef __linux__
 #include <unistd.h>
+#include <termios.h>
 #endif
 
 int main() {
     
+    return 0;
 }
